@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.936" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="To test Find an Agent functionality" name="Validate Service Center CallBack functionality" time="15.744">
+<failure type="java.lang.AssertionError" message="expected [Please provide valid contact number] but found [Compulsory field. Cannot be blank.]">
+<![CDATA[java.lang.AssertionError: expected [Please provide valid contact number] but found [Compulsory field. Cannot be blank.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at MbStepDefinition.TestStep.it_should_give_an_error_message(TestStep.java:213)
+	at ✽.It should give an error message(file:///C:/Users/GNEELKAN/Desktop/Sprint2/Rent/src/text/resource/MbFeature/Rent.feature:49)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User is on MagicBricks homepage.......................................passed
+When User is on Sales Enquiry Webpage.......................................passed
+And Click on Request Callback button........................................passed
+And submit the callback form without entering phone number..................passed
+Then It should give an error message........................................failed
+]]></system-out>
+</testcase>
+</testsuite>
